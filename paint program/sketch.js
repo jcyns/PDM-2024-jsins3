@@ -3,6 +3,7 @@ var c = "black";
 function setup() {
   createCanvas(900, 500);
   background(220);
+  
 }
 
 function draw() {
