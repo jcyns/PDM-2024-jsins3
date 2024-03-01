@@ -19,6 +19,7 @@ distAmt.toDestination();
 
 function setup() {
   createCanvas(400, 400);
+  
 
   sample1 = createButton('Vine');
   sample1.position (65,150);
@@ -40,17 +41,19 @@ function setup() {
   delaySlider = createSlider (0, 1, 0, 0.05);
   delaySlider.position (120,250);
   delaySlider.mouseMoved(() => delAmt.delayTime.value = delaySlider.value());
+  text('Delay', 255, 260);
   
   fbSlider = createSlider (0, 0.9, 0 , 0.05);
   fbSlider.position (120,300);
   fbSlider.mouseMoved(() => delAmt.feedback.value = fbSlider.VALUE());
+  text('Feedback', 255, 310);
+
 
   distSlider = createSlider (0, 0.9, 0 , 0.05);
   distSlider.position (120,350);
   distSlider.mouseMoved(() => distAmt.Distortion = distSlider.VALUE());
+  text('Distortion', 255, 360);
 
 }
 
-function draw() {
-  background(220);
-}
+
