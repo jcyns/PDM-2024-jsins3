@@ -10,7 +10,7 @@ let sine = new Tone.Synth({
   }
 }).toDestination();
 
-let sqaure = new Tone.Synth({
+let square = new Tone.Synth({
   oscillator: {
     type: "square"
   },
