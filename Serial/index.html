@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB LED</title>
+    <style>
+      body {
+        font-family: "impact", cursive;
+        transition: background-color 0.5s ease; /* Smooth transition for background color change */
+      }
+      h2 {
+        font-size: 40px;
+        text-align: left;
+      }
+      input {
+        display: block;
+        margin: left;
+      }
+      section {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>RGB LED</h2>
+    <input type="color" id="color-picker" />
+    <section id="controls">
+      <button onclick="onConnectUsb()" id="connect-usb">
+        <i class="fa fa-usb" aria-hidden="true"></i>
+      </button>
+      <button onclick="onChangeColor()" id="change-color">Change Color</button>
+    </section>
+    <script src="sketch.js"></script>
+  </body>
+</html>
